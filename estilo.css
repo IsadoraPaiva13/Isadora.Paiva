@@ -312,10 +312,6 @@ nav ul li :hover{
     border-radius: 8px;
 }
 
-
-
-
-
 .copyright{
     background-color: #A2A284;
     padding-top: 35px;
@@ -332,4 +328,113 @@ nav ul li :hover{
     font-size: 20px;
     text-align: center;
     color: white;
+}
+/* Estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+}
+
+/* Estilos para telas menores que 768px (tablets e dispositivos menores) */
+@media only screen and (max-width: 768px) {
+    .conteiner {
+        padding: 10px; /* Reduzindo o preenchimento */
+        height: auto; /* Altura automática */
+        padding-top: 10px; /* Reduzindo o preenchimento superior */
+    }
+
+    .conteiner h2 a {
+        font-size: 30px; /* Reduzindo o tamanho da fonte */
+    }
+
+    nav ul li {
+        margin: 5px 10px; /* Reduzindo a margem */
+    }
+
+    .hero {
+        padding-top: 200px; /* Reduzindo o preenchimento superior */
+        padding-bottom: 300px; /* Reduzindo o preenchimento inferior */
+    }
+
+    .hero-conteudo h1 {
+        font-size: 50px; /* Reduzindo o tamanho da fonte */
+        margin-top: -100px; /* Ajustando a margem superior */
+    }
+
+    .hero-conteudo p {
+        font-size: 30px; /* Reduzindo o tamanho da fonte */
+    }
+
+    #middle {
+        margin-left: 10px; /* Reduzindo a margem esquerda */
+        margin-right: 10px; /* Reduzindo a margem direita */
+    }
+
+    .middle-conteudo h2 {
+        font-size: 40px; /* Reduzindo o tamanho da fonte */
+    }
+
+    .middle-conteudo p {
+        font-size: 16px; /* Reduzindo o tamanho da fonte */
+    }
+
+    .row {
+        grid-gap: 20px; /* Reduzindo o espaçamento entre as colunas */
+    }
+
+    .galery img {
+        border-radius: 8px; /* Reduzindo o raio do bordo */
+    }
+
+    .layer {
+        font-size: 16px; /* Reduzindo o tamanho da fonte */
+    }
+}
+
+/* Estilos para telas menores que 480px (smartphones) */
+@media only screen and (max-width: 480px) {
+    .conteiner h2 a {
+        font-size: 25px; /* Reduzindo o tamanho da fonte */
+    }
+
+    .hero {
+        padding-top: 150px; /* Reduzindo o preenchimento superior */
+        padding-bottom: 200px; /* Reduzindo o preenchimento inferior */
+    }
+
+    .hero-conteudo h1 {
+        font-size: 40px; /* Reduzindo o tamanho da fonte */
+        margin-top: -80px; /* Ajustando a margem superior */
+    }
+
+    .hero-conteudo p {
+        font-size: 25px; /* Reduzindo o tamanho da fonte */
+    }
+
+    .middle-conteudo h2 {
+        font-size: 30px; /* Reduzindo o tamanho da fonte */
+    }
+
+    .middle-conteudo p {
+        font-size: 14px; /* Reduzindo o tamanho da fonte */
+    }
+
+    .layer {
+        font-size: 14px; /* Reduzindo o tamanho da fonte */
+    }
+
+    .project-wrapper-1 img,
+    .project-wrapper-2 img,
+    .project-wrapper-3 img {
+        max-width: 100%; /* Garantindo que as imagens se ajustem à largura do contêiner */
+        float: none; /* Removendo o alinhamento à esquerda */
+        margin: 0 auto 20px; /* Centralizando a imagem e adicionando margem inferior */
+    }
 }
